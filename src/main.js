@@ -1,10 +1,10 @@
-// встановлюємо контекст імпортування для папки js та її піддиректорій
-const requireModule = require.context('./js', true, /\.js$/);
+import * as swiper from '/js/swiper.js';
+import * as modal from '/js/modal.js';
+import * as mobile from '/js/mobile-menu.js';
 
-// імпортуємо всі файли з папки та її піддиректорій
-requireModule.keys().forEach(fileName => {
-  // імпортуємо файл
-  const importedModule = requireModule(fileName);
-  // додаємо його до поточного модуля
-  importedModule.default();
-});
+// Використання модулів
+swiper.file1();
+swiper.file2();
+modal.file1();
+mobile.file1();
+// тощо
