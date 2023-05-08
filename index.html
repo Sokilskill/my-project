@@ -17,11 +17,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <title>The Watch Spot</title>
 
     
-    <script type="module" crossorigin src="/my-project/assets/index-f0c7f4b7.js"></script>
-    <link rel="stylesheet" href="/my-project/assets/index-07356797.css">
+    <script type="module" crossorigin src="/my-project/assets/index-a1c58ce8.js"></script>
+    <link rel="stylesheet" href="/my-project/assets/index-a0c0ef40.css">
   </head>
   <body>
     <!-- Сергій Соколовський -->
@@ -67,7 +71,7 @@
       aria-controls="mobile-menu"
     >
       <svg class="menu-open-btn-icon" width="24" height="24">
-        <use href="/my-project/assets/icons-89f1bec4.svg#icon-menu-left"></use>
+        <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-menu-left"></use>
       </svg>
     </button>
 
@@ -76,7 +80,7 @@
     <div class="mob-menu js-mob-menu" id="mobile-menu">
       <button type="button" class="button-close js-close-menu">
         <svg class="close-icon" width="12" height="12">
-          <use href="/my-project/assets/icons-89f1bec4.svg#icon-button-close"></use>
+          <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-button-close"></use>
         </svg>
       </button>
 
@@ -84,7 +88,7 @@
         <a href="./index.html" class="header-logo mob-page-logo link">
           <span class="span-logo-icon">
             <svg class="logo-icon" width="14" height="14">
-              <use href="/my-project/assets/icons-89f1bec4.svg#icon-logo"></use>
+              <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-logo"></use>
             </svg>
           </span>
           thewatchspot</a
@@ -111,20 +115,247 @@
       <!-- Юрій Андрущенко -->
       <!-- Юрій Андрущенко -->
 
+<!-- ?hero -->
+
+<section class="hero">
+  <section class="hero-container container">
+    <h1 class="hero-title">Welcome to our collection of premium watches</h1>
+    <div class="swiper-and-pictures">
+      <div class="swiper-and-p">
+        <div>
+          <div
+            class="mySwyper swiper-initialized swiper-horizontal swiper-backface-hidden swiper"
+          >
+            <div
+              class="swiper-wrapper"
+              id="swiper-wrapper-7dfcf3f75ba74f27"
+              aria-live="polite"
+              style="transform: translate3d(0px, 0px, 0px)"
+            >
+              <div
+                class="swiper-slide swiper-slide-active"
+                role="group"
+                aria-label="1 / 5"
+                data-swiper-slide-index="0"
+              >
+                <picture>
+                  <source
+                    srcset="/my-project/assets/watch-one-mob-fc507646.jpg 1x, /my-project/assets/watch-one-mob@2x-8f531a89.jpg 2x"
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="/my-project/assets/watch-one-tab-desk-d1ae6a2a.jpg 1x, /my-project/assets/watch-one-tab-desk@2x-d154b7c5.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/my-project/assets/watch-one-tab-desk-d1ae6a2a.jpg"
+                    alt="type of watch one"
+                    width="436"
+                    height="255"
+                  />
+                </picture>
+              </div>
+              <div
+                class="swiper-slide swiper-slide-next"
+                role="group"
+                aria-label="2 / 5"
+                data-swiper-slide-index="1"
+              >
+                <picture>
+                  <source
+                    srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAMgBCgMBIgACEQEDEQH/xAAxAAEAAgMBAQEAAAAAAAAAAAAABAUCAwcGCAEBAQEBAQAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAOSC8gAAAAAAAAAAAAAAAAAAAAAB+kqTjLnWMkCJDta1I4vMAAAAAAAAAAAB+/nplrJdf+zpOQRKg7N5Ur6hvIAAAAAAAAAAACX9GcZ63N8ktuvRmvBavebDjs/rWR5/58+geIXFaGQAAAAAAAAAGWPUF91cb8Z0iWmewgz9eRqgWew5ryj6S8McOXNNeQAAAAAAAAAH79NfOv043XysLWaR5NIZarDUTdVXdlfhb15zTkHf+F3EQMgAAAAAAAAXv0Z8z/SE3HuYNo1mRzwsz1+BIgWH6VuFrAPI+L9PyRKkXmAAAAAAAAA6fzCwa+iLDnnQpu0i7RAm4bz9atxXw7DzJ4TmVrVXmCAAAAAAAAAMsR2/2HGesTpaWNVmu2VXC0hRYR+8u9hxpmELgAAAAAAAAAACV9C/OF61LmeYym/ca/Efhe3vhdx2bhFlW3mCAAAAAAAAAAAMsRO3QNk6ydejA3xMtSZi8wAAAAAAAAAAAAPzHam9GEkRcpH4BcAAAAAAAAAAAAAAAAAAAAAAAf/EAD8QAAIBAwIDBQQHBgQHAAAAAAECAwAEEQUSITFRBhNAYXEUIjJBB0JScoGRwRAzQ1OhsRUjgrIkNDZQVGB0/9oACAEBAAE/AP8A1JlHeRKK2Vt8q2jpTr7jcByNEf5KnzI8YOYoLm7AwMBTWwVszW2nQYNAZtM9JOfXxi/EPWlIF4TwxsNF1reOtbh1pnFH/lpOH8Qf2HjNM7N3V3p1zqL+7bxRSP67BRu7dOAXNe22+Phr222+ya9stvsmje232TVmIL+9tbNAQ08yRj1Y4rXNButHkQSqdjkgN4qws5L69trSP4ppFQeWTV1aWn+DT6JaFEM1o9tETyBdCoJqT6PtZR2iR7OeROawyO2D0ZsYWrP6ML6RQ15ewQeSAyn+60n0X6YPj1G4b0VVqT6LbI/udUlT70Qf9Vq9+jPXImHs89vOnqUIrs72G1O21Szv3urMpZzJNKm9xIqoc8UZRXbC1g1jQLloQDNAO+T/AEc/FdkkEE8l9tLSD/KgUcSXfnitP0GaQrcalIS/NYFbgv3yOZo3MMarDbRhtowFTCoop3uyGZplQDmEXJAPrUyNEsrvcXHuAE4brQjmQvtupco4U7veGTgjgfWllvI87lSUDgce63WpI9P1RO6lX3xnAPuSJ6EVe6dfaSe/t2aa2HxLzZR+orVrZLa/mWIYiY74vuNxHiERpHVEBLMQAK7L9m4tItEuLhR7Ts+f8JT+vWpZWuSATshJwByL0Qy9yGTbC4MUi/ZZuAOeh5UsK5JIySACeoFakg9gufuUUFSpEkbu52ovvsfu13Dyxo06FXJZweCmIfJSevWu3Gp6/a6IUtPgb99Onx93RuJNXsWkZMXNvxcgcJF+bDz6jxH0caCLm5fVJ1BjgOIvN6unM8phHwJxfzbpSJ3hyQdpwdjDkVowJJG8bqGVlKsD8weBFQo0cSI8hdlUAuebY+Zr2u02B/aYtp5NvGDzP6GhPAWCiZC24rjcM5XmPUVNCJe7DN7quGK/a28QD+PGmUMCCARVxbrKrxyAusmfkMKKTs1BbSyRRRhEB5Acq13SpNL1CSBh7h95PQ+GAJIA5mtBsxo/Z60h24dIQ7/fejCskYicBgTliGKsrc8jHI1bx3cBVSe/jJ+I4WRfXkGApmVBljgdammuIy5WFCgK7WMgXn1z51JHbTiNJLSFgUIx3wOCuSoFRyKr71s4BtldwfaVOC/M+pqKSVg3ew93jGPeDZ68ulNcF89yCwGeIxx8lzQtridQbltifyUY8fvt8/QVMgQxOFRcYjZV5KDyrt9YrNYR3YHvwt/RvDaPbi61XT7c8pbiND6M2DV82VjT7Tgn0FQFZJGYPE+DtDJ8h0JyaUcKIBBBGQavHfTkaVkMtkOLrjcYh1x81/tVrJp9zHFJAsDIVyjKFIIPzUir660vTYTc3HcxKTtBCAs7N9VVHFiag9u1HElxGbeA/DATlz5yEf7RSIEGAP2XCqVnjDRglC2wcGJ55rXENzpl5Hwy8R58hmmsbhImkKjAGTx448L2Y/6i0j/6o6ujmSD/AFVC+oSOxiubJgDg4Rmwehw9W3tIU+0NEzZ4d2pUY/En9uoaQulXU8+mxXDJKVkNsjIIo3B4uN/XoK7P6TJO66nqjyTX5GMyLtWEfYiXkBQUAVfw3UvceztjDHf723gR6GootQS3iVZYhL9cyBpQeA5EFKBvBI6TXNqw7tiURCr8ufFzWqNjT7snjiBv9tT3EDaNcq0QEvsp4/POPC6RcC21Swn/AJdxG35NU1xG7JtbJDZqCUmZ1aVWI5ADG0dDxNL+y4eRVCxrlm/DhS28aqy4yGOTmsKS0keWYAAYOBQOQCf23EpEdxiRSAMbccQTWvz9xpN6+f4ZUVPqne2ogW1RDjBcMxJ/M+FBIIIqz7QkQWkzNkhVz+HA1FdIUhnWRjGQCFRdxfdy61ELucq0jdxGCCI1ILn77ch6D8/2TBVlhdi2BkDGeZ8hWpC4mEdtA+wscyPz2r5DqTSqsMIBJwBgkAk/0pFCqoBJ9TmnXejLlhkEZU4Iz0NF7y1wJAZ4v5iAd4vmyjg3qv5VfTYjji3lvrEngfLNdtr0JaxWg5yNk+i+HtJJDHJEgLOAWROuOLAV2Im1f/D2F9AY4g2YC3BsHy6VbyrEAp4JkKpLFmZmp5UiieVzhEUsx8hUZeSFDKmxiASuc7T0oII+8bvRlmzlj/T8hQwXLB88MY+XA1PMYdjlcoXAc/ZB4BvTPOmYKpZuAAyammVQZX5KMoVb4g1XVwAJZ5WwACTWs6k2pX8s/wBTkg6KPDo7I6upwykEHoRXZrWRe2kKy8HxhT6fKoy0ZBxkdOlbe87nLF4Y8yv82d14qMDoePqBQkAzu4EIGbyHr+FXkNrFbXTNAHGN7puI3GkigiYuoAPwnj9o5x+Zp9jq6NHvUnu3XGeDD+o48aWQ2saJNIXdNypg5Lr8i3n1NXM7Pl5CAoHAfICu1mu95H7JB8L8z1UeJ7DyRTXk2mynhOu+I9JEq2e+t5UtriJ5QThJUGT6MK9xmJRirjnjgR6g0biZVKsFdSMH5GpbuGVJUktmxIu1sMOIpr9CXxbcWxnLdKa7uZc+8EHRR+pqeaOFJHCs5UZYICx/GpIb7UQ8k47i1QFipPMD5sa1C6N3eTTfVLYQcsKOXibK7lsry3uojh4pFcfhWpdoVXs7e6jZOvtEVuJIiRmpPpD7Vz/vbuM+Zgjq0+kTV4gFuYYpvzRqH0kJ9fS3/B6k+kZiD3Wln8Xqft12gkbKCKNfshK7O9ue0F3q1hp108AtJ5QjqsCpXbjWIbXRZ7aA+/PiLh0PPxcGsyrZPaNk5TYOhHQ0LhN5T2ZdwozH/wAZKM7Y4QIK9pfl3K/gK9pb+SKtNQEdxDMI9picMCK1LUpr+QF2O1eQPi0+NfUUuBeScRtxwHnwolc1wostEioyCknvZ48PLjy8azf8RvxnKgZ/SjJRkrvK7ykPA8BxPMfPxpB38jW40WNbjW40nBl8/G7mznPGtxrcfL8qz6VnyH5CsDh5cv8AuP8A/8QAFREBAQAAAAAAAAAAAAAAAAAAEWD/2gAIAQIBAT8AsRrP/8QAHhEBAAICAgMBAAAAAAAAAAAAAQIwESAAQBASMSH/2gAIAQMBAT8A7T8uPLdE0lYGejHaRXHbIVxf3Zctg5NJNsXRcvQfjf7HPY4yOz//2Q== 1x, /my-project/assets/watch-two-mob@2x-d821dc55.jpg 2x"
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="/my-project/assets/watch-two-tab-desk-2446037d.jpg 1x, /my-project/assets/watch-two-tab-desk@2x-f5856a44.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/my-project/assets/watch-two-tab-desk-2446037d.jpg"
+                    alt="type of watch two"
+                    width="436"
+                    height="255"
+                  />
+                </picture>
+              </div>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-label="3 / 5"
+                data-swiper-slide-index="2"
+              >
+                <picture>
+                  <source
+                    srcset="/my-project/assets/watch-three-mob-e0563997.jpg 1x, /my-project/assets/watch-three-mob@2x-31b5e868.jpg 2x"
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="/my-project/assets/watch-three-tab-desk-35617fa0.jpg 1x, /my-project/assets/watch-three-tab-desk@2x-7fca3afd.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/my-project/assets/watch-three-tab-desk-35617fa0.jpg"
+                    alt="type of watch three"
+                    width="436"
+                    height="255"
+                  />
+                </picture>
+              </div>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-label="4 / 5"
+                data-swiper-slide-index="3"
+              >
+                <picture>
+                  <source
+                    srcset="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAMgBCgMBIgACEQEDEQH/xAAxAAEAAgMBAQEAAAAAAAAAAAAABAYDBQcCAQgBAQEBAQAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAOSC8gAAAAAAU9fD4EAAAAAAAAAAAAAAz/c+xnWPh3/kqfiR5Zwi4AAAAAAAAAAAAZ951Nriu6rcqbsGevfD3HjdHTmroPPrgEAAAAAAAAAAE06/Kn6idIGfdYloWp6XAKFaY9RO8fne37pnlguAAAAAAAAAAHQue9Sakyq7Lm81R84Sw1jd10sPvWRyRa6Z6LVznpnM7zBAAAAAAAAAJVt0G0m5+rmYmtp6gwSrX3ec/J9QvesNRY9Bty98h7RyK4hhkAAAAAAAADNZqnsGtlUbXBm8ux0uItGskxzU6jU2c2k/d4i1ca6ly24BkAAAAAAAABYK/wCzaba6c8nWNV7/ALEqle6fmKJd9pXDJcM1fTR04vMAAAAAAAAAADr0rlfV5vhs6PgWyYNJ9Xf3XnN1Tq/5vt9LuQZAAAAAAAAAAAZMfwzbHV7Wddj9kYCvZoUpmGLgAAAAAAAAAAAACd6w451skNBIuTCZxi4AAAAAAAAAAAAHk8efXibmxfBfufDkufT59ZAAAAAAAAAAAAAAAAAAAAAAA//EACoQAAIDAAICAgAFBAMAAAAAAAMEAQIFAAYRQBITBxQVISIWIzFQMzRB/9oACAEBAAEIAP8AYx+/PhbkxMf58e8UVqBrMqBtel5rAYiImzAayOZhesWt8ZmJiZifc0KfXUdJy/nAfMXmYr5sUdfrtEr/AMWfMMVmpyx7gAkvaLQcZGPM0WbSUFUcm1k7imI/UkbR4kihKnIUDlLya1/b6riTubIFJ7Whm5+IzRKzRrj+Fg4emesXpHXm70tMTg6Mx5FWx1SzEdMUT1IcJo9y6lGSIL6vs9IWjF60bUvpACfOKJsGcuiaA5hsphmhINXpbSy5wivgnUpFLfnCwP4OdaezFKEBZaF9RRvDcdTOi2wox6+aibRfUSDrGAC4KBSVI+SWDy0sMciVu3fxPzi+eUDJZvKhI/tuJfL5WhnPHeRcy+zBC8BSv4ioDZoh2Jb1+hrDBbR2TiZK4W9Lndk9IrX+oRJsRWGGimvabIwxOda9fvtSfNSdmpCailXFGKrgbtQpK0i6uJoX+umLq93SzC0WfyPWIGEcDLzoASfprXjrCVkrVpVZoi5GKLxYhqxWT0r/AB5qkiIESgVUsBcOjtLbA9G7OltKHgp68VXBmmtcXdXdwKWWsf1UQfmXVF+dobg/ZXxwO/8AMkxfwdos3zNO2bBjgazsrsAoLlHBsjbujYGQv1klLnPWrQLtN6ubUFIYEmQlF6ltorO/Z9a5kB7+DjKGmJrM1n1OvTEb+PNtlqk9hdBAjrhuaWF2ct274wgWuGWh8moBWEUKXelsvECnq5VxspgKaWEzAIhzQsouuZhj78s67Vke2hPaUajwzUBmIVtoEqV9wlfUXNYDATV7KkS+2xpBavPztNZK8J67AB9tBcM0OowMIrnDSIqoalXV/wAqsZxcG6gKkxL7jOhepOY6pCFWFO65p01qAS7S2fruRj1Q9Zr7HsiScVqU6kC4+66PP/IpYB8fHXNoaeS5cizHmj/0CIDjzgqINxbmI3oBHK1cZISCBdK2TLLF7lr2tALuIrq39brU1vpQrbTu/n68XNKy2mGTAVTWXcM+9WG12LFCu4Q2VoGs846/NbElRZ1JOaYXV6SKW3dbUnY0qIghUOHgrap+29hR2yq3V9YRbhKMo9tBXXQU0YhA+Hc1mVNvK0Rj/ULdYWa+NwR049RmAIXRvjfzav8AS2NaPLero9vk6NcbDPQgV7/iVrCu+vjK+x+HLonkNHBPtAKDN0aGMJUs+Yua/wBq90kzbVkz2IL9VKWv6iOMdBm5a9Y1jNVdEIbAuvYr2syc5WDlOb2MbUNk6SzwtzsuZp4jPDpzU5KVsEtLRE/y/wDYi9v2quhFv+XrJ08czFidr7Uxs/Uv7Y72pb9tKLjavPEKQzSl7QiLkrCHSbcve5S2ir1rRalI9uf8TzQiv22nmNM/Tbx5txj5SG/lelfBbS//ANiY91uK2pSeZFv2tHJnjhLQOY4p5he/h2fLJPdKX+zSOZ9/he3JLx4v8Jji1ohavk1vkUlvdJefHx4Avwt55LUcOabxwV5isR7sxbk0tPPqnn1zz655FLRyIt/sf//EAEAQAAIBAwIDBQQGCAQHAAAAAAECAwAREgQhMUFhEyIyQFEFcYGREBQjQlJyJENQY5KhorEgYLPBc7LCw9HS4v/aAAgBAQAJPwD9pD9gKbEA3pSdjSkfQdyRauI86ouEUXvvVqAt0qEWI5VkArb25CvxnziMUVhkQNhSE7Df4U4ZudEDvL/enAo5xPxx42NI1iATt5u4hF5JiOSLUKI0QByG5uDTvj+EA17O1IjPB2TBP4nsKbS7WvfW6Yf9ytG8/wDwHSf/AEi1JLG68QdvmKjD2KorcCtMzaZ2wbnifNL+k6+TCD8i1OUEy8F3cjoK0yGTG4lT7WUgc8uXwtUy3cWN2Mjb/kDD5mtdqQkoGSjSr/vJQikCDYyRNG43v4lzFNJ2Srss1tVCbfdR75J8DStAdQ4MbE5xObfcf/Y0RjPEeyb+e3UcaXGWGRkcdV8x455VQdLnjUZaDRxDT6SO11suxdqlfC/j5sV5C/IetQoYxa/ER9Ceb+81OwG4spwAsOlSQns+z4kHx05A38D7WHSh2mwuyALJv6jg3up27AS3KocVYniLHwP/ACqWa0ZBgmm8WYPhbp6E0vc1KiKfpKvmLhNLF2cXWSWnIjchnVeGI2AHpw+ApgIALKo2zx/6RyFKZI2uk3VG4gdRUrsL7XrWTolp74eBMEys3572piD6g0rWS8krtxeY8/co4UgXt1IizI/SUHG4/sTUcbs5SzSgsQF2s3Vct/UVNFLomkEmqZTwCXsTlbiR3q0E8WmQCF5DEY439Ct/LyojmL65OGOJdpfCPgtHEynJjbgtunTapzBqApODd9HA/AV8JqCRoYzZ3Ckqp6mlysbkWuLCoYL5WA+rPzPOlVchjiqMg2/MTUQl1TjPS+zz/qT+i17Ucu8uC6aBft36KT3USgmOoUkqrBwJoxuLjY5rWon7Y3UhFyCo54kj0G9axJdHqdKrpimNyv4vLfrZkT+JrU1lEiwqOgslXJCIq2GR73eNNiicSQF+HSpSv2aloUVSp74Uhr7tcNRj0XtEg5aRmtFMf3RrTakagSBGis18n2HzqdNd7VKqUiHeh0rW8bfiYUYpdVJMQ7PCrN7srchSFEJAZDyvwIB3saEirHNDOhMIiXji2NjvcNWohgR0ZTnfcEleQPKvauhhnhjJiTO8zvLwUjrQIINiD5XgNdB/zitMqumsbOQFiWu9xeoFlTNSUZynFdt1Nab6uQqYormQPuQWu/C16hhlWaFkzZrBPRl43sRcVqAwi7zm1msLvyJ91auR/aUMJ7WMXZieSM3Jqdiyu2b3ub5Fje+5O4pY1vIJxqDs1gLEU31yOTC65FC5zU435bKa9mppSdPZrTvKTlIlgQ9qRmsGDBaR8+wgIYdUU81oghp5GBHMFvK8Y5Fce9TeihilSOVB95uWwseJWibTQBlsoa7R77A88SbUkmSqZGB75C8y9uFQOpIsQoDL8LkVAsU7gGKNnyKc83681Xlxp1z7SIAo5AFw1xYUqA3tLELASKPvADgy1BI298Sq/LK9QiKAyEIL2QMdzdm50sl5NQpIkQBxHB3zvxYE2AosARHHcKGu9/8A6rVyq2qhdSjHJMFAAYDy5vJoXX4xOAv9JWlaPUQ2eMOPkCNtuVW0+jkBzSJcC1j3vrD8WtwtWjTVzyJjpNK4BXrK9Wl1DSu7M12a8gHfv67GjGVlC3YrvdTfnaxoKT2ZAPO8ilLD6HV9LMSzwzDOAleOY+4wHMVHZTGsWmQ8Sv8A5kbetRIggjEsiSQmyzuMk4KW2a7V7ej1TwRJEEQIFBPFFCeXxK6mN4bN4SSNgffwqd3jN+yd7bBdije7gaRXY27WAmwcr15EUnbppUaTsnTeSbhHC6jwoKIyzdTiAFOAyYW9BWmA7OTT3QNuxmvYrcH0oBUVCyIuwsuxPU1Ckc2mBhndVwWSJu+k/wCYXsRxNfZ6MAPKz9wzleZ9EoTwhSp0dlILva4boKdJ5tNqVaMtwnktgzf+taFICEvM4UB3fqeYHl2xdGDKfQjcVEDpdfGGcD9XOuxI9DWrZFBTsHCFlYHiGtUfYSXKrKGxII9GrU6aRSG8d42AcWPeTZjRJilMRcrKtrwAhOK1JpEju5uzNI4z2bu90U7a/VopZY1AIXH0QWC0ssUqucNKim1l5ytWo7fXzjGbUgAYR/eVK20+hQBgOGZHmW/fwVELxQvxFwCKxjbodqUR4ABlScguBWu1SzAHs0xLX2vxqX7MIysk+pCZE87Fq18sgu2EOlJQANxUyyb/ACFQQwRl1YJEtuN7libljVu2Mdo1P9K/E05aSRy7seJZjcnzIuY23X1U7EVnFNKojsw8VzyZbqaIOO4vUIveoFqBflTBSeCis3yRSERSzNaozFDG2ZTIMS3XHzbEAkZWPEA0173+F65Aj+30DhTWtuT0O9MbdmLjzp75Cnpa1HnRHypxa3IU5UcCaN7Kv9vOxcdMrZUaPOjtgxpMiWFdB8h51wAYbFfd9P4TTlTmK5sfO22H+C+xH+VP/8QAFBEBAAAAAAAAAAAAAAAAAAAAcP/aAAgBAgEBPwBd/8QAHREAAQQDAQEAAAAAAAAAAAAAAQIRMDEAIEAQIf/aAAgBAwEBPwDdsY8SpgPT9wyitFCRN7G407KjTsq+AlpU1oo8Cq4VVO4xxhL9P//Z 1x, /my-project/assets/watch-four-mob@2x-476dd53d.jpg 2x"
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="/my-project/assets/watch-four-tab-desk-a3113ccf.jpg 1x, /my-project/assets/watch-four-tab-desk@2x-5ec5acf4.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/my-project/assets/watch-four-tab-desk-a3113ccf.jpg"
+                    alt="type of watch four"
+                    width="436"
+                    height="255"
+                  />
+                </picture>
+              </div>
+              <div
+                class="swiper-slide"
+                role="group"
+                aria-label="5 / 5"
+                data-swiper-slide-index="4"
+              >
+                <picture>
+                  <source
+                    srcset="/my-project/assets/watch-five-mob-4d16b5d6.jpg 1x, /my-project/assets/watch-five-mob@2x-1fd61976.jpg 2x"
+                    type="image/jpeg"
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="/my-project/assets/watch-five-tab-desk-70be8df5.jpg 1x, /my-project/assets/watch-five-tab-desk@2x-fc409433.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <img
+                    src="/my-project/assets/watch-five-tab-desk-70be8df5.jpg"
+                    alt="type of watch five"
+                    width="436"
+                    height="255"
+                  />
+                </picture>
+              </div>
+            </div>
+            <span
+              class="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            ></span>
+          </div>
+          <div class="swiper-btn">
+            <div
+              class="btn-prev arrow"
+              tabindex="0"
+              role="button"
+              aria-label="Previous slide"
+              aria-controls="swiper-wrapper-7dfcf3f75ba74f27"
+            >
+              <svg class="hero-btn" width="18" height="18">
+                <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-chevron-left"></use>
+              </svg>
+            </div>
+            <div
+              class="btn-next arrow"
+              tabindex="0"
+              role="button"
+              aria-label="Next slide"
+              aria-controls="swiper-wrapper-7dfcf3f75ba74f27"
+            >
+              <svg class="hero-btn" width="18" height="18">
+                <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-chevron-right"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination">
+            <span class="swiper-pagination-current">1</span>
+            <span class="swiper-pagination-total">5</span>
+          </div> -->
+        </div>
+        <div class="text-container">
+          <p class="hero-text">
+            Our watches are not just timepieces, but also an expression of your
+            personality and lifestyle. From classic designs to modern ones, we
+            have a watch to suit every taste and occasion.
+          </p>
+        </div>
+      </div>
+      <picture class="hero-main-pictures">
+        <source
+          srcset="/my-project/assets/hero-main-mob-b2d9ad46.jpg 1x, /my-project/assets/hero-main-mob@2x-24397316.jpg 2x"
+          type="image/jpeg"
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="/my-project/assets/hero-main-tab-7fa5943b.jpg 1x, /my-project/assets/hero-main-tab@2x-8fa8ed8c.jpg 2x"
+          media="(max-width: 1279px)"
+        />
+        <source
+          srcset="/my-project/assets/hero-main-desk-d181a88a.jpg 1x, /my-project/assets/hero-main-desk@2x-4ae07bf2.jpg 2x"
+          media="(min-width: 1280px)"
+        />
+        <img
+          src="/my-project/assets/hero-main-tab-7fa5943b.jpg"
+          alt="watch on the hand"
+          width="704"
+          height="410"
+        />
+      </picture>
+    </div>
+  </section>
+</section>
+
 
       <!-- Дарина Качалка -->
       <!-- Дарина Качалка -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="about-container-text">
+      <h2 class="about-title">About us</h2>
+
+      <p class="about-text">
+        Welcome to our premium watch collection, where luxury and style meet
+        functionality and precision. Our selection of timepieces embodies the
+        very best in Swiss craftsmanship and engineering, ensuring that you'll
+        always have a reliable and stylish accessory on your wrist.
+      </p>
+      <p class="about-text-right">
+        At our premium watch collection, we believe that a watch is more than
+        just a timekeeping device it's a statement piece that reflects your
+        personality and style. So why settle for anything less than the best?
+        Browse our collection today and discover the perfect watch for you.
+      </p>
+    </div>
+    <img class="about-gif" src="/my-project/assets/watchspot-aebc2176.gif" alt="watchspot" />
+  </div>
+</section>
 
 
       <!-- Наталія Ковшар -->
       <!-- Наталія Ковшар -->
-<section id="catalog">
+<section id="catalog" class="catalog-section">
   <div class="container">
     <h2 class="catalog-title">Catalog</h2>
     <ul class="catalog-list list">
       <li class="catalog-item">
         <svg class="heart-icon" width="24" height="24">
-          <use href="/my-project/assets/icons-89f1bec4.svg#icon-heart"></use>
+          <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-heart"></use>
         </svg>
         <a href="" class="catalog-link link">
           <div class="catalog-thumb">
@@ -155,7 +386,6 @@
               </ul>
             </div>
           </div>
-
           <div class="catalog-card-content">
             <p class="catalog-text text">
               Tube Watch S42 Date Steel With Black Case
@@ -166,7 +396,7 @@
       </li>
       <li class="catalog-item">
         <svg class="heart-icon" width="24" height="24">
-          <use href="/my-project/assets/icons-89f1bec4.svg#icon-heart"></use>
+          <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-heart"></use>
         </svg>
         <a href="" class="catalog-link link">
           <div class="catalog-thumb">
@@ -196,14 +426,15 @@
               </ul>
             </div>
           </div>
-
-          <p class="catalog-text text">Avondale Watch Police For Men</p>
-          <span class="catalog-price-text">€800</span>
+          <div class="catalog-card-content">
+            <p class="catalog-text text">Avondale Watch Police For Men</p>
+            <span class="catalog-price-text">€800</span>
+          </div>
         </a>
       </li>
       <li class="catalog-item">
         <svg class="heart-icon" width="24" height="24">
-          <use href="/my-project/assets/icons-89f1bec4.svg#icon-heart"></use>
+          <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-heart"></use>
         </svg>
         <a href="" class="catalog-link link">
           <div class="catalog-thumb">
@@ -243,7 +474,7 @@
       </li>
       <li class="catalog-item">
         <svg class="heart-icon" width="24" height="24">
-          <use href="/my-project/assets/icons-89f1bec4.svg#icon-heart"></use>
+          <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-heart"></use>
         </svg>
         <a href="" class="catalog-link link">
           <div class="catalog-thumb">
@@ -283,7 +514,7 @@
       </li>
       <li class="catalog-item">
         <svg class="heart-icon" width="24" height="24">
-          <use href="/my-project/assets/icons-89f1bec4.svg#icon-heart"></use>
+          <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-heart"></use>
         </svg>
         <a href="" class="catalog-link link">
           <div class="catalog-thumb">
@@ -322,7 +553,7 @@
 
       <li class="catalog-item">
         <svg class="heart-icon" width="24" height="24">
-          <use href="/my-project/assets/icons-89f1bec4.svg#icon-heart"></use>
+          <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-heart"></use>
         </svg>
         <a href="" class="catalog-link link">
           <div class="catalog-thumb">
@@ -360,7 +591,7 @@
       </li>
       <li class="catalog-item">
         <svg class="heart-icon" width="24" height="24">
-          <use href="/my-project/assets/icons-89f1bec4.svg#icon-heart"></use>
+          <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-heart"></use>
         </svg>
         <a href="" class="catalog-link link">
           <div class="catalog-thumb">
@@ -401,7 +632,7 @@
 
       <li class="catalog-item">
         <svg class="heart-icon" width="24" height="24">
-          <use href="/my-project/assets/icons-89f1bec4.svg#icon-heart"></use>
+          <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-heart"></use>
         </svg>
         <a href="" class="catalog-link link">
           <div class="catalog-thumb">
@@ -440,7 +671,7 @@
 
       <li class="catalog-item">
         <svg class="heart-icon" width="24" height="24">
-          <use href="/my-project/assets/icons-89f1bec4.svg#icon-heart"></use>
+          <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-heart"></use>
         </svg>
         <a href="" class="catalog-link link">
           <div class="catalog-thumb">
@@ -478,7 +709,7 @@
       </li>
       <li class="catalog-item">
         <svg class="heart-icon" width="24" height="24">
-          <use href="/my-project/assets/icons-89f1bec4.svg#icon-heart"></use>
+          <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-heart"></use>
         </svg>
         <a href="" class="catalog-link link">
           <div class="catalog-thumb">
@@ -518,7 +749,7 @@
       </li>
       <li class="catalog-item">
         <svg class="heart-icon" width="24" height="24">
-          <use href="/my-project/assets/icons-89f1bec4.svg#icon-heart"></use>
+          <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-heart"></use>
         </svg>
         <a href="" class="catalog-link link">
           <div class="catalog-thumb">
@@ -556,7 +787,7 @@
       </li>
       <li class="catalog-item">
         <svg class="heart-icon" width="24" height="24">
-          <use href="/my-project/assets/icons-89f1bec4.svg#icon-heart"></use>
+          <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-heart"></use>
         </svg>
         <a href="" class="catalog-link link">
           <div class="catalog-thumb">
@@ -605,7 +836,7 @@
   <div class="modal">
     <button data-modal-close class="modal-close-button" type="button">
       <svg class="modal-close-icon" width="10" height="10">
-        <use href="/my-project/assets/icons-89f1bec4.svg#close-modal"></use>
+        <use href="/my-project/assets/icons-9c8fc6f1.svg#close-modal"></use>
       </svg>
     </button>
     <div class="modal-card">
@@ -680,27 +911,66 @@
       <!-- Тимур Кайум -->
       <!-- Тимур Кайум -->
 <section class="nwatch">
+    <div class="container">
+        <p class="nwatch-top-text">New watches</p>
+        <h2 class="nwatch-title">Green And Bronze—The Match Made In Heaven</h2>
+        <div class="nwatch-img">
+            <img src="/my-project/assets/nwatch-f-ec60b2df.jpg" alt="Watch with hand" class="nwatch-img-f">
+            <img src="/my-project/assets/nwatch-s-6baea0b8.jpg" alt="Black Watch" class="nwatch-img-s">
+        </div>
+    </div>  
+
+      <!-- Іван Кривошея -->
+      <!-- Іван Кривошея -->
+<section class="sale-section section">
   <div class="container">
-    <h2 class="nwatch-title">New watches</h2>
-    <p class="nwatch-top-text">Green And Bronze—The Match Made In Heaven</p>
-    <div class="nwatch-img">
-      <img
-        src="/my-project/assets/nwatch-f-ec60b2df.jpg"
-        alt="Watch with hand"
-        class="nwatch-img-f"
-      />
-      <img
-        src="/my-project/assets/nwatch-s-6baea0b8.jpg"
-        alt="Black Watch"
-        class="nwatch-img-s"
-      />
+    <h2 class="sale-titte title">Sale</h2>
+    <div class="galery-conteiner">
+      <div class="galery-img-container">
+        <ul class="img-list">
+          <li><img class="small-img" src="../img/sale-1.jpg" alt="" /></li>
+          <li><img class="small-img" src="../img/sale-2.jpg" alt="" /></li>
+          <li><img class="small-img" src="../img/sale-3.jpg" alt="" /></li>
+          <li><img class="small-img" src="../img/sale-4.jpg" alt="" /></li>
+        </ul>
+        <img class="big-img" src="../img/big-img.png" alt="" />
+      </div>
+      <div class="watch-description-conteiner">
+        <div>
+          <h3 class="watch-title">Greenlane Watch By Police For MenHT</h3>
+          <p class="product-tag">Product tag: PEWJK2227003</p>
+          <p class="price-p">
+            <span class="sale-price">€700</span>
+            <span class="price">€1000</span>
+          </p>
+        </div>
+        <div class="description-conteiner">
+          <h4 class="description-title">Description</h4>
+          <p class="description-paragraph">
+            Richly detailed with an understated design - the Police Men’s
+            Greenlane watch features a versatile multifunction design that fits
+            effortlessly into work and play. The steel case is adorned with a
+            semi-transparent black dial. The timepiece exhibits a contrast
+            through a black IP bracelet with matching crown and pushers.
+          </p>
+        </div>
+        <div class="details-conteiner">
+          <h4 class="details-title">DETAILS & FEATUREStion</h4>
+          <p class="details-paragraph">
+            Gender: man <br />
+            Size: 46x54.5mm <br />
+            Case Colour: Steel <br />
+            Band Material: Metal <br />
+            Case Material: Metal <br />
+            Features: Multifunction Water <br />
+            Resistant: 5 (ATM) <br />
+            Band Colour: Steel
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-
-
-      <!-- Іван Кривошея -->
-      <!-- Іван Кривошея -->
 
     </main>
 
@@ -714,7 +984,7 @@
       <nav class="nav-footer">
         <a class="logo-footer" href="./index.html"
           ><svg width="40" height="40">
-            <use href="/my-project/assets/icons-89f1bec4.svg#icon-logo-tab"></use></svg
+            <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-logo-tab"></use></svg
         ></a>
         <ul class="nav-list-footer">
           <li class="nav-li-footer">
@@ -734,19 +1004,19 @@
         <li>
           <a href="https://www.facebook.com" target="_blank"
             ><svg class="footer-social-icon" width="24" height="24">
-              <use href="/my-project/assets/icons-89f1bec4.svg#icon-facebook"></use></svg
+              <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-facebook"></use></svg
           ></a>
         </li>
         <li>
           <a href="https://www.instagram.com" target="_blank"
             ><svg class="footer-social-icon" width="24" height="24">
-              <use href="/my-project/assets/icons-89f1bec4.svg#icon-instagram"></use></svg
+              <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-instagram"></use></svg
           ></a>
         </li>
         <li>
           <a href="https://www.youtube.com" target="_blank"
             ><svg class="footer-social-icon" width="24" height="24">
-              <use href="/my-project/assets/icons-89f1bec4.svg#icon-youtube"></use></svg
+              <use href="/my-project/assets/icons-9c8fc6f1.svg#icon-youtube"></use></svg
           ></a>
         </li>
       </ul>
@@ -794,5 +1064,8 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--------------------swiper------------------- -->
   </body>
 </html>
