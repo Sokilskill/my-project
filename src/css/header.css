@@ -201,3 +201,32 @@
     color: var(--white-background);
   }
 }
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #cbbbbb;
+  color: #3d2d2d;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+
+.arrow-up {
+  font-size: 20px;
+}
+
+.scroll-to-top-btn.visible {
+  opacity: 1;
+}
+.scroll-to-top-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

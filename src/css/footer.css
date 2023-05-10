@@ -9,7 +9,7 @@
   position: relative;
 }
 
-.logo {
+.logo-footer {
   height: 50px;
   width: 50px;
   margin-bottom: 40px;
@@ -48,11 +48,12 @@
   margin-bottom: 80px;
 }
 
-.social-media a {
+.social-media .link {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  color: var(--white-background);
   width: 40px;
   height: 40px;
 
@@ -60,8 +61,12 @@
   border-radius: 10px;
 }
 
+.social-media .link:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .footer-social-icon {
-  fill: #f4f4fd;
+  fill: currentColor;
 }
 
 .contact {
