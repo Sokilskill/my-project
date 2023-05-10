@@ -37,7 +37,10 @@
 }
 .logo-icon {
   margin-right: 4px;
+  width: 14px;
+  height: 14px;
 }
+
 .span-logo-icon {
   margin-right: 4px;
   display: flex;
