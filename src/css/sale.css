@@ -1,17 +1,10 @@
 /* Іван Кривошея */
 
-body {
-  color: #141414;
-}
 .sale-section {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 .sale-titte {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
   margin-bottom: 40px;
 }
 .galery-conteiner {
@@ -51,6 +44,7 @@ body {
 .big-img {
   height: 100%;
 }
+
 .watch-description-conteiner {
   margin-top: 40px;
 }
@@ -189,6 +183,10 @@ body {
 @media screen and (min-width: 1280px) {
   .sale-section {
     padding: 80px 132px 160px;
+  }
+
+  .sale-titte {
+    margin-bottom: 80px;
   }
   .galery-conteiner {
     max-width: 981px;
