@@ -210,14 +210,15 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #cbbbbb;
+  background-color: #e8dbdb;
   color: #3d2d2d;
   border: none;
+  text-align: center;
   outline: none;
   cursor: pointer;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out,
-    box-shadow 0.2s ease-in-out;
+  transition: opacity 350ms ease-in-out, transform 350ms ease-in-out,
+    box-shadow 350ms ease-in-out;
 }
 
 .arrow-up {
